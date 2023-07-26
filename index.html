@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--main container caring everything-->
+    <div class="container">
+
+        <!--image slot-->
+        <div class="image">
+            <img src="/Sign-Up-Form/picture/leave.jpg" width="100%" height="100%">
+            <div class="logo">
+                <img class="img" src="/Sign-Up-Form/picture/odin-lined.png" width="20%" height="80%">
+
+                <!--the appended image-->
+                <h1 class="h1">ODIN</h1>
+            </div>
+        </div>
+        <!--end of image slot-->
+
+        <!--this container is the one next after the image part-->
+        <div class="container2">
+
+            <!--The header section-->
+            <header>
+                <div class="content">
+                    <h4 class="h4">The Odin Project (TOP)</h4><br>
+                    <h5>It is a Open-Source Community dedicated
+                        to providing the best information sources to take you from
+                        zero to a full-stack developer. More information can be found at
+                        The Odin Project’s<a href=""> about page</a>.The Odin Project attracts people from
+                        all over the world who aspire to learn how to become developers.</h5>
+                   <h5>If interested to explore your Career Early Enough you can Sign Up with us</h5>
+                </div>
+            </header>
+            <!---End of header section-->
+
+            <!--main section caring the form format-->
+            <main>
+                <h4>Sign-UP Details!</h4><br>
+                <form action="index.html" method="POST" class="form" onsubmit="return validate()">
+
+                    <!--first box containing the login details-->
+                    <div class="form-box">
+                        <div class="name">
+                            <label for="first-Name">*FIRST NAME</label>
+                            <input type="text" class="input-field" placeholder="name" required maxlength="8"
+                                minlength="4">
+                        </div><br>
+                        <div class="class">
+                            <label for="email">EMAIL</label>
+                            <input type="email" class="input-field" placeholder="email" maxlength="12" minlength="8">
+                        </div><br>
+                        <div class="class">
+                            <label for="password">*PASSWORD</label>
+                            <input type="password" class="input-field" required maxlength="8" minlength="4" id="input">
+                            <label for="password-match" class="match"></label>
+                        </div>
+                    </div>
+                    <!--end of the first box-->
+
+                    <!--second box containing the login details-->
+                    <div class="form-box2">
+                        <div class="name">
+                            <label for="last-Name">*LAST NAME</label>
+                            <input type="text" class="input-field" placeholder=" last-name" required maxlength="8"
+                                minlength="4">
+                        </div><br>
+                        <div class="class">
+                            <label for="phone-Number">PHONE NUMBER</label>
+                            <input type="text" class="input-field" placeholder="00-0000-00" minlength="10"
+                                maxlength="10" id="password">
+                        </div><br>
+                        <div class="class">
+                            <label for=" confirm-password">*CONFIRM PASSWORD</label>
+                            <input type="password" class="input-field" required maxlength="8" minlength="4"
+                                id="confirm-password">
+                        </div>
+                    </div>
+                    <!--End of the second box-->
+
+            </main>
+            <!--End of the main section-->
+
+            <!--the footer section-->
+            <footer>
+                <button type="submit" class="button">Create Account</button>
+                </form>
+                <br>
+                <div class="login">Already have an account? <a href="#">log in</a></div>
+                <br><br><br>
+                <center>&copy;2023 AUTHOR:Enockay Mwema TOP PROJECT</center>
+            </footer>
+            <!--end of the footer section-->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
